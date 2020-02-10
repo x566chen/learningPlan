@@ -48,7 +48,7 @@
 ### 7 Days Plan (2/10-2/16)
 Date | Plan | Complete 
 :-: | :- | :-: 
-2/10 | 1.	Advanced JS Concept  第1-2节<br>2.	Data structure + algorithm 第1节<br>3.	JavaScript高级程序设计 第1-3章<br>4.	Leetcode 3题 |  ☑️
+2/10 | 1.	Advanced JS Concept  第1-2节<br>2.	JavaScript高级程序设计 第1-3章<br>3.	Leetcode 3题 |  ☑️
 2/11 | 1.	Advanced JS Concept  第3-5节<br>2.	Data structure + algorithm 第2节<br>3.	JavaScript高级程序设计 第4，5章<br>4.	Leetcode 3题 |  
 2/12 | 1.	Advanced JS Concept  第6-8节<br>2.	Data structure + algorithm 第3节<br>3.	JavaScript高级程序设计 第6-8章<br>4.	Leetcode 3题 | 
 2/13 | 1.	Advanced JS Concept  第9-11节<br>2.	Data structure + algorithm 第4节<br>3.	JavaScript高级程序设计 第9，10章<br>4.	Leetcode 3题 | 
