@@ -11,11 +11,21 @@
   - day-06
   - day-07
 - questions
+- summary
+  - day-01  
+  - day-02
+  - day-03
+  - day-04
+  - day-05
+  - day-06
+  - day-07
+
 
 #### 说明:  
 - notes: 记录一周笔记,其中根据topic分类.
 - codes: 记录每天练习的code.
 - questions: 总结一周遇到的问题.
+- summary: 每天的个人学习想法总结以及是否进行接下来的调整.
 
 ### Overall Goal:
 - 教材:
