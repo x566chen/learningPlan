@@ -10,6 +10,33 @@
   - day-05
   - day-06
   - day-07
+- questions
+
+#### 说明:  
+- notes: 记录一周笔记,其中根据topic分类.
+- codes: 记录每天练习的code.
+- questions: 总结一周遇到的问题.
+
+### Overall Goal:
+- 教材:
+  - 1.JavaScript高级程序设计: 第一周过一遍.
+  - 2.JavaScript权威指南: 可选.
+  - 3.JavaScript Dom编程艺术: 可选.
+- 计算机基础:
+  - 前端对HTTP相关知识要求较高,其他比如操作系统,数据库等.
+- 学习资源:
+  - 1.MDN相关文档.
+  - 2.Udemy相关课程:
+    - Advanced JS Concept
+    - Data structure + algorithm(JS)
+  - 3.掘金:用来搜文章来学习特定问题,比如跨域.
+
+### Output:
+
+- 1.	要有笔记.
+- 2.	每天学习内容有进度打卡.
+- 3.	有总结(包括问题总结).
+
 
 ### 7 Days Plan (2/10-2/16)
 Date | Plan | Complete 
@@ -21,3 +48,6 @@ Date | Plan | Complete
 2/14 | 1.	Advanced JS Concept  第13-15节<br>2.	Data structure + algorithm 第5节<br>3.	JavaScript高级程序设计 第11，12章<br>4.	Leetcode 3题 | 
 2/15 | 1.	Advanced JS Concept  第16-18节<br>2.	Data structure + algorithm 第6节<br>3.	JavaScript高级程序设计 第14章<br>4.	Leetcode 3题 |
 2/16 | 1.	Advanced JS Concept  第19-21节<br>2.	Data structure + algorithm 第7节<br>3.	JavaScript高级程序设计 第15章<br>4.	Leetcode 3题 |  
+
+#### 说明:  
+- complete: 完成时的记录标准。
