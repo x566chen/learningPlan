@@ -4,6 +4,7 @@
   - [基本概念](https://github.com/x566chen/learningPlan/blob/master/week-01/notes/basicConcept.md)
   - [变量作用域和内存问题](https://github.com/x566chen/learningPlan/blob/master/week-01/notes/variableScope.md)
   - [引用类型](https://github.com/x566chen/learningPlan/blob/master/week-01/notes/referenceType.md)
+  - [面向对象的程序设计](https://github.com/x566chen/learningPlan/blob/master/week-01/notes/object.md)
 
 - Advanced JS Concept:
   - [JS foundation](https://github.com/x566chen/learningPlan/blob/master/week-01/notes/jsFoundation.md)
