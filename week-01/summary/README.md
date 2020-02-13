@@ -9,6 +9,9 @@
   - [7. 数字反转](https://leetcode-cn.com/problems/reverse-integer/) 中等难度
   - [8. 字符串转换成整数](https://leetcode-cn.com/problems/string-to-integer-atoi/)
   - [9. 回文数](https://leetcode-cn.com/problems/palindrome-number/)
+  - [13. 罗马变整数](https://leetcode.com/problems/roman-to-integer/)
+  - [11. 装最多的水](https://leetcode.com/problems/container-with-most-water/)中等难度
+  - [15. 三数之和](https://leetcode.com/problems/3sum/)中等难度
 
 
 - Comments:
