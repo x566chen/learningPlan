@@ -12,6 +12,11 @@
   - [13. 罗马变整数](https://leetcode.com/problems/roman-to-integer/)
   - [11. 装最多的水](https://leetcode.com/problems/container-with-most-water/)中等难度
   - [15. 三数之和](https://leetcode.com/problems/3sum/)中等难度
+  - [12. 整数变罗马](https://leetcode.com/problems/integer-to-roman)中等
+  - [28. Implement strStr()](https://leetcode.com/problems/implement-strstr/)
+  - [21. 连接两个链表](https://leetcode.com/problems/merge-two-sorted-lists/)
+  - [14. Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)
+  - [35. 查找插入位置](https://leetcode.com/problems/search-insert-position/submissions/)
 
 
 - Comments:
@@ -20,3 +25,4 @@
   - day 02: 刷题时间多了，依旧是时间不够。
   - day 03: 时间不够。在继承上还要多花时间
   - day 04: 放慢速度，在精不在多。
+  - day 05: js第九章看了半天并不是很明白，周天要加强实践。准备做个project。

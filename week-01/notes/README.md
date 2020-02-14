@@ -6,7 +6,7 @@
   - [引用类型](https://github.com/x566chen/learningPlan/blob/master/week-01/notes/referenceType.md)
   - [面向对象的程序设计](https://github.com/x566chen/learningPlan/blob/master/week-01/notes/object.md)
   - [函数表达式](https://github.com/x566chen/learningPlan/blob/master/week-01/notes/functionExpression.md)
-  - [BOM](https://github.com/x566chen/learningPlan/blob/master/week-01/notes/bom.md)
+  - [BOM+用户检测](https://github.com/x566chen/learningPlan/blob/master/week-01/notes/bom.md)
 
 - Advanced JS Concept:
   - [JS foundation](https://github.com/x566chen/learningPlan/blob/master/week-01/notes/jsFoundation.md)
