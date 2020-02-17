@@ -54,9 +54,11 @@ Date | Plan | Complete
 2/14 | 1.	Advanced JS Concept  第4节<br>2.	JavaScript高级程序设计 第8，9章<br>4.	Leetcode 5题 | 
 2/15 | 1. 整理leetcode 17题 <br>2.	JavaScript高级程序设计 第9章<br> |☑️
 2/16 | 1. 整理leetcode 17题 <br>2.	做一个小project（前端部分）<br> |☑️
-2/17 | 1. 完成leetcode 5题 <br>2. JavaScript高级程序设计 第11～13章 3. 整理笔记|
+2/17 | 1. 完成leetcode 3题 <br>2. JavaScript高级程序设计 第11～13（half）章 3. 整理笔记|☑️
+2/18 | 1. 完成leetcode 3题 <br>2. JavaScript高级程序设计 13（half），17，20章 3. 整理笔记|
 
 
 #### 说明:  
 - complete: 完成时的记录标准。
 - 提高效率: 少看手机。
+- 笔记: 为了方便，week02的笔记依旧放在week01中。
