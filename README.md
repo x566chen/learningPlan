@@ -45,16 +45,18 @@
 
 
 
-### 7 Days Plan (2/10-2/16)
+### 14 Days Plan (2/10-2/16)
 Date | Plan | Complete 
 :-: | :- | :-: 
 2/10 | 1.	Advanced JS Concept  第1-2节<br>2.	JavaScript高级程序设计 第1-3章<br>3.	Leetcode 3题 |  ☑️
 2/11 | 1.	Advanced JS Concept  第3节<br>2.	JavaScript高级程序设计 第4，5章<br>4.	Leetcode 3题 |☑️  
 2/12-13 | 1. Advanced JS Concept  第4节<br>2.	JavaScript高级程序设计 第6-7章<br>4.	Leetcode 6题 | ☑️
 2/14 | 1.	Advanced JS Concept  第4节<br>2.	JavaScript高级程序设计 第8，9章<br>4.	Leetcode 5题 | 
-2/15 | 1. 整理leetcode 17题 <br>2.	JavaScript高级程序设计 第9章<br> |
-2/16 | 1. 整理leetcode 17题 <br>2.	做一个小project<br> |
+2/15 | 1. 整理leetcode 17题 <br>2.	JavaScript高级程序设计 第9章<br> |☑️
+2/16 | 1. 整理leetcode 17题 <br>2.	做一个小project（前端部分）<br> |☑️
+2/17 | 1. 完成leetcode 5题 <br>2. JavaScript高级程序设计 第11～13章 3. 整理笔记|
 
 
 #### 说明:  
 - complete: 完成时的记录标准。
+- 提高效率: 少看手机。
