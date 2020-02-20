@@ -10,6 +10,9 @@
   - [DOM + DOM扩展](https://github.com/x566chen/learningPlan/blob/master/week-01/notes/dom.md)
   - [DOM2 + DOM 3](https://github.com/x566chen/learningPlan/blob/master/week-01/notes/dom23.md)
   - [事件](https://github.com/x566chen/learningPlan/blob/master/week-01/notes/event.md)
+  - [错误处理与调试](https://github.com/x566chen/learningPlan/blob/master/week-01/notes/error.md)
+  - [JSON](https://github.com/x566chen/learningPlan/blob/master/week-01/notes/json.md)
+  - [AJAX](https://github.com/x566chen/learningPlan/blob/master/week-01/notes/ajax.md)
 
 
 - Advanced JS Concept:

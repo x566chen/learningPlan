@@ -55,7 +55,10 @@ Date | Plan | Complete
 2/15 | 1. 整理leetcode 17题 <br>2.	JavaScript高级程序设计 第9章<br> |☑️
 2/16 | 1. 整理leetcode 17题 <br>2.	做一个小project（前端部分）<br> |☑️
 2/17 | 1. 完成leetcode 3题 <br>2. JavaScript高级程序设计 第11～13（half）章 3. 整理笔记|☑️
-2/18 | 1. 完成leetcode 3题 <br>2. JavaScript高级程序设计 13（half），17，20章 3. 整理笔记|
+2/18 | 1. 完成leetcode 3题 <br>2. JavaScript高级程序设计 13（half），17，20章 3. 整理笔记|☑️
+2/19 | 1. 完成leetcode 3题 <br>2. JavaScript高级程序设计 21， 附录b 3. 整理笔记|☑️
+2/20 | 1. 完成leetcode 3题 <br>2. JavaScript高级程序设计复习笔记|☑️
+2/21 | 1. 整理leetcode 12题 <br>2. 整理笔记 3. project|
 
 
 #### 说明:  
