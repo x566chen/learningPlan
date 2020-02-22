@@ -51,14 +51,14 @@ Date | Plan | Complete
 2/10 | 1.	Advanced JS Concept  第1-2节<br>2.	JavaScript高级程序设计 第1-3章<br>3.	Leetcode 3题 |  ☑️
 2/11 | 1.	Advanced JS Concept  第3节<br>2.	JavaScript高级程序设计 第4，5章<br>4.	Leetcode 3题 |☑️  
 2/12-13 | 1. Advanced JS Concept  第4节<br>2.	JavaScript高级程序设计 第6-7章<br>4.	Leetcode 6题 | ☑️
-2/14 | 1.	Advanced JS Concept  第4节<br>2.	JavaScript高级程序设计 第8，9章<br>4.	Leetcode 5题 | 
+2/14 | 1.	Advanced JS Concept  第4节<br>2.	JavaScript高级程序设计 第8，9章<br>4.	Leetcode 5题 |☑️
 2/15 | 1. 整理leetcode 17题 <br>2.	JavaScript高级程序设计 第9章<br> |☑️
 2/16 | 1. 整理leetcode 17题 <br>2.	做一个小project（前端部分）<br> |☑️
 2/17 | 1. 完成leetcode 3题 <br>2. JavaScript高级程序设计 第11～13（half）章 3. 整理笔记|☑️
 2/18 | 1. 完成leetcode 3题 <br>2. JavaScript高级程序设计 13（half），17，20章 3. 整理笔记|☑️
 2/19 | 1. 完成leetcode 3题 <br>2. JavaScript高级程序设计 21， 附录b 3. 整理笔记|☑️
 2/20 | 1. 完成leetcode 3题 <br>2. JavaScript高级程序设计复习笔记|☑️
-2/21 | 1. 整理leetcode 12题 <br>2. 整理笔记 3. project|
+2/21 | 1. 整理leetcode 12题 <br>2. 整理笔记 3. project|☑️
 
 
 #### 说明:  
