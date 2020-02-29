@@ -1,0 +1,7 @@
+.notDone{
+  color: black
+}
+.Done{
+  color: red;
+  text-decoration:line-through;
+}

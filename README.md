@@ -1,19 +1,4 @@
-## LearningPlan File Structure & Plan -week 01
-
-### Structure  
-- notes  
-- codes  
-  - day-01  
-  - day-02
-  - day-03
-  - day-04
-  - day-05
-  - day-06
-  - day-07
-- questions
-- summary
-
-
+## LearningPlan File Structure & Plan -week 01/02/03
 
 #### 说明:  
 - notes: 记录一周笔记,其中根据topic分类.
@@ -43,22 +28,30 @@
 - 4.  对于leetcode每天列出练习的题目难度和链接.
 - 5.  有代码产出，每天每个topic都有一定量的代码练习(至少0.5h).
 
+- [notes集合](https://github.com/x566chen/learningPlan/blob/master/week-01/notes/README.md)
 
 
-### 14 Days Plan (2/10-2/16)
+
+### 21 Days Plan (2/10-3/1)
 Date | Plan | Complete 
 :-: | :- | :-: 
 2/10 | 1.	Advanced JS Concept  第1-2节<br>2.	JavaScript高级程序设计 第1-3章<br>3.	Leetcode 3题 |  ☑️
-2/11 | 1.	Advanced JS Concept  第3节<br>2.	JavaScript高级程序设计 第4，5章<br>4.	Leetcode 3题 |☑️  
-2/12-13 | 1. Advanced JS Concept  第4节<br>2.	JavaScript高级程序设计 第6-7章<br>4.	Leetcode 6题 | ☑️
-2/14 | 1.	Advanced JS Concept  第4节<br>2.	JavaScript高级程序设计 第8，9章<br>4.	Leetcode 5题 |☑️
+2/11 | 1.	Advanced JS Concept  第3节<br>2.	JavaScript高级程序设计 第4，5章<br>3.	Leetcode 3题 |☑️  
+2/12-13 | 1. Advanced JS Concept  第4节<br>2.	JavaScript高级程序设计 第6-7章<br>3.	Leetcode 6题 | ☑️
+2/14 | 1.	Advanced JS Concept  第4节<br>2.	JavaScript高级程序设计 第8，9章<br>3.	Leetcode 5题 |☑️
 2/15 | 1. 整理leetcode 17题 <br>2.	JavaScript高级程序设计 第9章<br> |☑️
 2/16 | 1. 整理leetcode 17题 <br>2.	做一个小project（前端部分）<br> |☑️
-2/17 | 1. 完成leetcode 3题 <br>2. JavaScript高级程序设计 第11～13（half）章 3. 整理笔记|☑️
-2/18 | 1. 完成leetcode 3题 <br>2. JavaScript高级程序设计 13（half），17，20章 3. 整理笔记|☑️
-2/19 | 1. 完成leetcode 3题 <br>2. JavaScript高级程序设计 21， 附录b 3. 整理笔记|☑️
+2/17 | 1. 完成leetcode 3题 <br>2. JavaScript高级程序设计 第11～13（half）章<br>3. 整理笔记|☑️
+2/18 | 1. 完成leetcode 3题 <br>2. JavaScript高级程序设计 13（half），17，20章 <br>3. 整理笔记|☑️
+2/19 | 1. 完成leetcode 3题 <br>2. JavaScript高级程序设计 21， 附录b <br>3. 整理笔记|☑️
 2/20 | 1. 完成leetcode 3题 <br>2. JavaScript高级程序设计复习笔记|☑️
-2/21 | 1. 整理leetcode 12题 <br>2. 整理笔记 3. project|☑️
+2/21 | 1. 整理leetcode 12题 <br>2. 整理笔记<br> 3. project|☑️
+2/24 | 1. 完成leetcode 3 题 <br>2. 整理http笔记 |☑️
+2/25 | 1. 完成leetcode 3 题 <br>2. 整理css笔记 |☑️
+2/26 | 1. 完成leetcode 3 题 <br>2. 整理js笔记 |☑️
+2/27 | 1. 整理jquery笔记<br> 2 project|☑️
+2/28 | 1. 整理bootstrap笔记<br> 2. project|☑️
+
 
 
 #### 说明:  

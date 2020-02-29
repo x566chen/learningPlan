@@ -14,6 +14,11 @@
   - [JSON](https://github.com/x566chen/learningPlan/blob/master/week-01/notes/json.md)
   - [AJAX](https://github.com/x566chen/learningPlan/blob/master/week-01/notes/ajax.md)
 
+- Front-end:
+  - [http, https](https://github.com/x566chen/learningPlan/blob/master/week-01/notes/web.md)
+  - [css](https://github.com/x566chen/learningPlan/blob/master/week-01/notes/css.md)
+  - [js](https://github.com/x566chen/learningPlan/blob/master/week-01/notes/js.md)
+
 
 - Advanced JS Concept:
   - [JS foundation](https://github.com/x566chen/learningPlan/blob/master/week-01/notes/jsFoundation.md)
