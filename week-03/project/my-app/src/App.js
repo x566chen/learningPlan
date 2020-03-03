@@ -1,6 +1,19 @@
 import React, { Component } from 'react';
 import ListTasks from './components/ListTasks';
 import '../src/css/App.css';
+import Particles from 'react-particles-js';
+
+const particlesOptions = {
+  particles: {
+    number: {
+      value: 30,
+      density: {
+        enable: true,
+        value_area: 800
+      }
+    }
+  }
+}
 
 class App extends Component {
   constructor(props){
@@ -37,9 +50,10 @@ class App extends Component {
 
   render(){
     return (
-      <div>
-        <input value={this.state.value} onChange = {this.handleInput.bind(this)} />
-        <button onClick={this.handleAddClick.bind(this)}>Add</button>
+      <div className='App'>
+        <Particles className='particles' params={particlesOptions}/>
+        <input className='search' placeholder="input task" value={this.state.value} onChange = {this.handleInput.bind(this)} />
+        <input type ='submit'className='Add' onClick={this.handleAddClick.bind(this)} value='Add'/>
         <ul>
           {
             this.state.list.map((item, index)=>{

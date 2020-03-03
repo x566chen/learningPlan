@@ -21,9 +21,9 @@ class ListTasks extends Component{
     return (
       
       <div className={this.state.color?"Done":"notDone"}>
-        {this.props.content}
-        <button onClick = {this.handleDelete.bind(this)}>Delete</button>
-        <button onClick={this.handleDoneClick.bind(this)}>Done</button>
+        <div className='content'>{this.props.content}</div>
+        <button className='deleteBtn' onClick = {this.handleDelete.bind(this)}>Delete</button>
+        <button className='doneBtn' onClick={this.handleDoneClick.bind(this)}>Done</button>
       </div>
     )
   }

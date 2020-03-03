@@ -5,3 +5,8 @@
   color: red;
   text-decoration:line-through;
 }
+.content {
+  font-size: 20px;
+  color: rosybrown;
+  font-weight: 100;
+}
