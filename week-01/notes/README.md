@@ -18,6 +18,8 @@
   - [http, https](https://github.com/x566chen/learningPlan/blob/master/week-01/notes/web.md)
   - [css](https://github.com/x566chen/learningPlan/blob/master/week-01/notes/css.md)
   - [js](https://github.com/x566chen/learningPlan/blob/master/week-01/notes/js.md)
+  - [WebSocket](https://github.com/x566chen/learningPlan/blob/master/week-01/notes/websocket.md)
+  
 
 
 - Advanced JS Concept:

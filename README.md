@@ -51,6 +51,7 @@ Date | Plan | Complete
 2/26 | 1. 完成leetcode 3 题 <br>2. 整理js笔记 |☑️
 2/27 | 1. 整理jquery笔记<br> 2 project|☑️
 2/28 | 1. 整理bootstrap笔记<br> 2. project|☑️
+3/2 | 1. 整理websoket笔记<br> 2. project改进|☑️
 
 
 
