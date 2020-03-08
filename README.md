@@ -50,8 +50,12 @@ Date | Plan | Complete
 2/25 | 1. 完成leetcode 3 题 <br>2. 整理css笔记 |☑️
 2/26 | 1. 完成leetcode 3 题 <br>2. 整理js笔记 |☑️
 2/27 | 1. 整理jquery笔记<br> 2 project|☑️
-2/28 | 1. 整理bootstrap笔记<br> 2. project|☑️
-3/2 | 1. 整理websoket笔记<br> 2. project改进|☑️
+2/28 | 1. 整理bootstrap笔记<br> 2. project完成|☑️
+3/2 | 1. 整理ajax笔记<br> |☑️
+3/3 | 1. 整理websoket笔记<br> 2. project改进|☑️
+3/4 | 1. 整理服务端编程笔记<br> 2. project改进-eslint加入|☑️
+3/5 | 1. 整理前端工作流笔记<br> 2. project改进-endpoint完成|☑️
+3/6 | 1. 整理移动web开发笔记<br> 2. project改进|☑️
 
 
 

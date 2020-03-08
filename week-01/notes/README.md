@@ -19,6 +19,11 @@
   - [css](https://github.com/x566chen/learningPlan/blob/master/week-01/notes/css.md)
   - [js](https://github.com/x566chen/learningPlan/blob/master/week-01/notes/js.md)
   - [WebSocket](https://github.com/x566chen/learningPlan/blob/master/week-01/notes/websocket.md)
+  - [服务端编程](https://github.com/x566chen/learningPlan/blob/master/week-01/notes/server.md)
+  - [ajax](https://github.com/x566chen/learningPlan/blob/master/week-01/notes/ajax2.md)
+  - [前端工作流](https://github.com/x566chen/learningPlan/blob/master/week-01/notes/workflow.md)
+  - [移动web开发](https://github.com/x566chen/learningPlan/blob/master/week-01/notes/webdev.md)
+
   
 
 

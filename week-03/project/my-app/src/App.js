@@ -25,6 +25,20 @@ class App extends Component {
         });
     }
 
+  getData(){ 
+    fetch(`http://localhost:8080`,{
+    method: 'GET'
+    }).then(res => res.json()).then(
+    data => {
+    this.setState({list:[...this.state.list,data.name]})
+    }
+    )
+    }
+
+    componentWillMount(){
+      this.getData();
+      }
+
   handleAddClick=() => {
       this.setState({
           list: [...this.state.list, this.state.value],
