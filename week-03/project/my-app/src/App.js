@@ -1,7 +1,19 @@
 import React, { Component } from "react";
 import Particles from "react-particles-js";
 import ListTasks from "./components/ListTasks";
+import io from "socket.io-client";
+
 import "./css/App.css";
+const mysql = require('mysql');
+const socket = io('ws://localhost:3000/');
+
+
+const connection = mysql.createConnection({
+  host: 'localhost',
+  user: 'root',
+  password: '1122Cx1994@',
+  database: 'test',
+});
 
 
 const particlesOptions = {
@@ -16,37 +28,67 @@ const particlesOptions = {
     },
 };
 
+
+
 class App extends Component {
     constructor(props) {
         super(props);
         this.state = ({
+            personName: '',
             list: [],
             value: "",
         });
     }
 
-  getData(){ 
-    fetch(`http://localhost:8080`,{
-    method: 'GET'
-    }).then(res => res.json()).then(
-    data => {
-    this.setState({list:[...this.state.list,data.name]})
-    }
-    )
-    }
 
-    componentWillMount(){
-      this.getData();
-      }
+
+  initSocket () {
+    socket.on('enter', (data) => {      
+      this.showMessage(data, "enter")
+    });
+    socket.on('message', (data) => {  
+      this.showMessage(data, "message")
+    });
+    socket.on('addClick', (data) => {   
+      // this.setState({
+      //   list: [...this.state.list, this.state.value],
+      //   value: "",
+      // })
+      let add = `INSERT INTO todoList (name) VALUES ( "${data}")`;
+      connection.query(add,(err, result)=>{
+        if (err){
+          console.log('ERROR')
+        }else{
+          console.log(data)
+        }
+      } )
+    });
+    socket.on('doneClick', (data) => {   
+      this.showMessage(data, "doneClick")
+    });
+    socket.on('deleteClick', (data) => {   
+      this.showMessage(data, "deleteClick")
+    });
+    socket.on('leave', (data) => {        
+      this.showMessage(data, "leave")
+    });
+    socket.on('enterSelf', (data) => {   
+      this.setState({personName: data.name})
+    });
+  
+  }
 
   handleAddClick=() => {
+      socket.emit('addClick', this.state.value)
       this.setState({
           list: [...this.state.list, this.state.value],
           value: "",
       });
+      
   }
 
   handleInput = (e) => {
+      socket.emit('message', e.target.value)
       this.setState({
           value: e.target.value,
       });
