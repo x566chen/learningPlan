@@ -1,19 +1,10 @@
 import React, { Component } from "react";
 import Particles from "react-particles-js";
 import ListTasks from "./components/ListTasks";
-import io from "socket.io-client";
+import AddTasks from "./components/AddTasks"
 
 import "./css/App.css";
-const mysql = require('mysql');
-const socket = io('ws://localhost:3000/');
 
-
-const connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: '1122Cx1994@',
-  database: 'test',
-});
 
 
 const particlesOptions = {
@@ -28,93 +19,96 @@ const particlesOptions = {
     },
 };
 
-
+const URL = 'ws://localhost:3030'
 
 class App extends Component {
-    constructor(props) {
-        super(props);
-        this.state = ({
-            personName: '',
-            list: [],
-            value: "",
-        });
+  state = {
+    done: false,
+    tasks:[],
+    index:''
+  }
+
+  ws = new WebSocket(URL)
+
+  componentDidMount(){
+    this.ws.onopen = () =>{
+      console.log('connected');
     }
+    this.ws.onmessage = (evt) => {
 
-
-
-  initSocket () {
-    socket.on('enter', (data) => {      
-      this.showMessage(data, "enter")
-    });
-    socket.on('message', (data) => {  
-      this.showMessage(data, "message")
-    });
-    socket.on('addClick', (data) => {   
-      // this.setState({
-      //   list: [...this.state.list, this.state.value],
-      //   value: "",
-      // })
-      let add = `INSERT INTO todoList (name) VALUES ( "${data}")`;
-      connection.query(add,(err, result)=>{
-        if (err){
-          console.log('ERROR')
-        }else{
-          console.log(data)
+        const task = JSON.parse(evt.data)
+        if (typeof(task)==='object') {
+          this.addTask(task)
         }
-      } )
-    });
-    socket.on('doneClick', (data) => {   
-      this.showMessage(data, "doneClick")
-    });
-    socket.on('deleteClick', (data) => {   
-      this.showMessage(data, "deleteClick")
-    });
-    socket.on('leave', (data) => {        
-      this.showMessage(data, "leave")
-    });
-    socket.on('enterSelf', (data) => {   
-      this.setState({personName: data.name})
-    });
-  
-  }
+        if (typeof(task)==='number') {
+          this.deleteTask(task)
+        }
+      }
+    
 
-  handleAddClick=() => {
-      socket.emit('addClick', this.state.value)
+    this.ws.onclose = () => {
+      console.log('disconnected')
       this.setState({
-          list: [...this.state.list, this.state.value],
-          value: "",
-      });
-      
+        ws: new WebSocket(URL),
+      })
+    }
   }
 
+  addTask = (task, index) =>{
+    //console.log('task', index)
+    this.setState(state =>({tasks: [task, ...state.tasks], done: false}))
+  }
+
+
+
+
+  submitTask = (aTask) =>{
+    const task = {done: false, task: aTask }
+    this.ws.send(JSON.stringify(task))
+    this.addTask(task)
+
+  }
+
+  deleteTask = index => {
+    const tasks = [...this.state.tasks];
+    tasks.splice(index, 1);
+    this.setState({
+        tasks,
+    });
+  }
+
+  handleDeleteClick = (index) => {
+    this.ws.send(JSON.stringify(index));
+    this.deleteTask(index);
+}
   handleInput = (e) => {
-      socket.emit('message', e.target.value)
       this.setState({
           value: e.target.value,
       });
   }
 
-  handleDeleteClick = (index) => {
-      const list = [...this.state.list];
-      list.splice(index, 1);
-      this.setState({
-          list,
-      });
-  }
+
+
 
 
   render() {
       return (
-        <div className="App">
+        
+          <div className='App'>
             <Particles className="particles" params={particlesOptions} />
-            <input className="search" placeholder="input task" value={this.state.value} onChange={this.handleInput.bind(this)} />
-            <input type="submit" className="Add" onClick={this.handleAddClick.bind(this)} value="Add" />
+            
+            <AddTasks ws = {this.ws} onSubmitTasks={aTask=>this.submitTask(aTask)} />
+            
             <ul>
-                {
-                      this.state.list.map((item, index) => <ListTasks key={index} index={index} content={item} delete={this.handleDeleteClick.bind(this)} />)
+                <label>
+                  {
+                      this.state.tasks.map((item, index) => <ListTasks key={index} index={index} task={item.task} delete={this.handleDeleteClick.bind(this)} />)
                   }
+                </label>
               </ul>
-          </div>
+            </div>
+
+
       );
   }
 }

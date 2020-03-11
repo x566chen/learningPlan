@@ -69,3 +69,11 @@
     transform: rotate(360deg);
   }
 }
+
+.notDone{
+  color: black
+}
+.Done{
+  color: red;
+  text-decoration:line-through;
+}

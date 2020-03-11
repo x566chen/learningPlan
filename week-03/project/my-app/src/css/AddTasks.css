@@ -1,17 +1,4 @@
-.notDone{
-  color: black
-}
-.Done{
-  color: red;
-  text-decoration:line-through;
-}
-.content {
-  font-size: 20px;
-  color: rosybrown;
-  font-weight: 100;
-}
-
-.deleteBtn {
+.add {
   background: #d8e2e5;
   background-image: -webkit-linear-gradient(top, #d8e2e5, #44d2ed);
   background-image: -moz-linear-gradient(top, #d8e2e5, #44d2ed);
@@ -33,7 +20,7 @@
   text-decoration: none;
 }
 
-.deleteBtn:hover {
+.add:hover {
   color: #ffffff;
   background: #48c9fb;
   text-decoration: none;
