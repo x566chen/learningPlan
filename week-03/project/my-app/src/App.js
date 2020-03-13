@@ -2,7 +2,9 @@ import React, { Component } from "react";
 import Particles from "react-particles-js";
 import ListTasks from "./components/ListTasks";
 import AddTasks from "./components/AddTasks"
+import Content from './components/Content'
 import "./css/App.css";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom"
 
 
 
@@ -25,6 +27,12 @@ const URL = 'ws://localhost:3030'
 class App extends Component {
   state = {
     tasks:[],
+    urlList:[
+      {
+        aid:1,
+        title:111
+      },
+    ]
   }
 
   ws = new WebSocket(URL)
@@ -34,7 +42,7 @@ class App extends Component {
       console.log('connected');
     }
     this.ws.onmessage = (evt) => {
-      document.title='something new'
+        this.scroll();
         const task = JSON.parse(evt.data)
         //this.changeTitle(update)
         if (typeof(task)==='object') {
@@ -61,6 +69,16 @@ class App extends Component {
   
 
 
+  scroll = () =>{
+    let words = 'something new happen';
+     setInterval(()=>{
+      let start = words.substring(0,1);
+      let end = words.substring(1);
+      words = end + start;
+      document.title = words;
+    },400)
+  }
+
 
 
   addTask = (task) =>{
@@ -69,12 +87,9 @@ class App extends Component {
   }
 
 
-
-
   submitTask = (aTask) =>{
     const task = {done: false, task: aTask, user: this.state.user }
     this.ws.send(JSON.stringify(task))
-    
     this.addTask(task)
     console.log('submit', this.state)
 
@@ -114,21 +129,17 @@ class App extends Component {
     })
     console.log('handledone:',this.state)
   }
-
-  
-
-
-
-
-
-
+  // createComponent = ()=>{
+  //   let details = this.state.tasks;
+  //   let date = '111';
+  //   return <Content details={details} date={date}/>
+  // }
 
   render() {
       return (
-
+        <Router>
           <div className='App'>
-
-
+          <Route path="/" >
             <Particles className="particles" params={particlesOptions} />
             <input
             type="text"
@@ -139,15 +150,25 @@ class App extends Component {
           />
             <AddTasks ws = {this.ws} onSubmitTasks={aTask=>this.submitTask(aTask)} />
            
-            <ul>
-                <label>
+                  <ul>
+                  <label>
                   {
-                      this.state.tasks.map((item, index) => <ListTasks key={index} index={index} task={item.task} done={item.done}  user={item.user} handleDone={this.handleDone.bind(this)} delete={this.handleDeleteClick.bind(this)} />)
+                      this.state.tasks.map((item, index) => {
+                        return(
+                        <li key={index}>
+                      <ListTasks key={index} index={index} task={item.task} done={item.done}  user={item.user} handleDone={this.handleDone.bind(this)} delete={this.handleDeleteClick.bind(this)} /><Link to={`/content/${item.task}`}>Details</Link>
+                      </li>
+                      ) })
                   }
-                </label>
-              </ul>
-            {console.log(document.title)}
+                  </label>
+                  </ul>
+                  </Route>
+                  <Route path="/content/:task" component={Content}></Route>
+                
+              
+          
             </div>
+            </Router>
             
 
 

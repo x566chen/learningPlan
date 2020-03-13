@@ -20,7 +20,7 @@ class ListTasks extends Component {
   }
 
 
-
+  
 
   handleDelete =() =>{
     this.props.delete(this.props.index);
