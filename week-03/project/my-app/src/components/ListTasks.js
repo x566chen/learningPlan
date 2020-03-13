@@ -6,13 +6,17 @@ class ListTasks extends Component {
   constructor(props){
     super(props);
     this.state = ({
-      index: this.props.index
+      index: this.props.index,
+      done: this.props.done,
+      user: this.props.user
     })
   }
 
   
   doneTask =() =>{
-    this.setState({ done: true });
+    this.props.handleDone(this.props)
+    console.log('list:',this.props)
+ 
   }
 
 
@@ -20,6 +24,7 @@ class ListTasks extends Component {
 
   handleDelete =() =>{
     this.props.delete(this.props.index);
+    //console.log('list:',this.props)
   }
 
 
@@ -29,10 +34,10 @@ class ListTasks extends Component {
       <div >
           <div className="content">
 
-            {this.props.task}
+          <div id='p'> {this.props.task} </div> from  <div id='p'> {this.props.user}  {this.props.done}</div>
           
-          <button className="deleteBtn" onClick={this.handleDelete.bind(this)}>Delete</button>
-
+          <button className="Btn" onClick={this.handleDelete.bind(this)}>Delete</button>
+          <button className="Btn" onClick={this.doneTask.bind(this)}>Done</button>
           </div>
         </div>
     );

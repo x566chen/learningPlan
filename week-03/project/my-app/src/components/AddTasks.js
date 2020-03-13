@@ -5,12 +5,22 @@ import '../css/AddTasks.css'
 
 let i = 0;
 class AddTasks extends Component {
+  constructor(props){
+    super(props);
+    this.state ={
+      task: this.props.task,
+      done: false,
+      user: this.props.user
+ 
+    }
+  }
   static propTypes = {
     onSubmitTasks: PropTypes.func.isRequired,
   }
   state = {
     task: '',
-    index: ''
+    index: '',
+    done: false
   }
 
   
@@ -23,9 +33,10 @@ class AddTasks extends Component {
           i++;
           e.preventDefault()
           this.props.onSubmitTasks(this.state.task)
-          this.setState({ task: '', index: i })
+          this.setState({ task: '', index: i , done:false, user:this.props.user})
         }}
       >
+        
         <input
           type="text"
           placeholder={'Enter task plz...'}
